@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title class="page__title">CatPhotoApp</title>
+  </head>
+  <body class="page">
+    <main class="main">
+      <h1 class="main__title">CatPhotoApp</h1>
+      <section class="photo-section">
+        <h2 class="photo-section__title">Cat Photos</h2>
+        <!-- TODO: Add link to cat photos -->
+        <p class="photo-section__text">See more <a target="_blank" href="https://freecatphotoapp.com" class="photo-section__link">cat photos</a> in our gallery.</p>
+        <a href="https://freecatphotoapp.com" class="photo-section__image-link"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back." class="photo-section__image"></a>
+      </section>
+      <section class="list-section">
+        <h2 class="list-section__title">Cat Lists</h2>
+        <h3 class="list-section__subtitle">Things cats love:</h3>
+        <ul class="list-section__list">
+          <li class="list-section__item">cat nip</li>
+          <li class="list-section__item">laser pointers</li>
+          <li class="list-section__item">lasagna</li>
+        </ul>
+        <figure class="list-section__figure">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg" alt="A slice of lasagna on a plate." class="list-section__figure-image">
+          <figcaption class="list-section__figure-caption">Cats <em class="list-section__figure-emphasis">love</em> lasagna.</figcaption>
+        </figure>
+        <h3 class="list-section__subtitle">Top 3 things cats hate:</h3>
+        <ol class="list-section__list">
+          <li class="list-section__item">flea treatment</li>
+          <li class="list-section__item">thunder</li>
+          <li class="list-section__item">other cats</li>
+        </ol>
+        <figure class="list-section__figure">
+          <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg" alt="Five cats looking around a field." class="list-section__figure-image">
+          <figcaption class="list-section__figure-caption">Cats <strong class="list-section__figure-strong">hate</strong> other cats.</figcaption>
+        </figure>
+      </section>
+      <section class="form-section">
+        <h2 class="form-section__title">Cat Form</h2>
+        <form action="https://freecatphotoapp.com/submit-cat-photo" class="form-section__form">
+          <fieldset class="form-section__fieldset">
+            <legend class="form-section__legend">Is your cat an indoor or outdoor cat?</legend>
+            <label class="form-section__label"><input id="indoor" type="radio" name="indoor-outdoor" value="indoor" checked class="form-section__radio"> Indoor</label>
+            <label class="form-section__label"><input id="outdoor" type="radio" name="indoor-outdoor" value="outdoor" class="form-section__radio"> Outdoor</label>
+          </fieldset>
+          <fieldset class="form-section__fieldset">
+            <legend class="form-section__legend">What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked class="form-section__checkbox"> <label for="loving" class="form-section__label">Loving</label> <input id="lazy" type="checkbox" name="personality" value="lazy" class="form-section__checkbox"> <label for="lazy" class="form-section__label">Lazy</label> <input id="energetic" type="checkbox" name="personality" value="energetic" class="form-section__checkbox"> <label for="energetic" class="form-section__label">Energetic</label>
+          </fieldset>
+          <input type="text" name="catphotourl" placeholder="cat photo URL" required class="form-section__input">
+          <button type="submit" class="form-section__button">Submit</button>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">No Copyright - Inspired from: <a href="https://www.freecodecamp.org" class="footer__link">freeCodeCamp.org</a></p>
+    </footer>
+  </body>
+</html>
